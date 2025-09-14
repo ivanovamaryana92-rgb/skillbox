@@ -1,6 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="VcsDirectoryMappings">
-    <mapping directory="$PROJECT_DIR$" vcs="Git" />
+    <mapping directory="" vcs="Git" />
+    <mapping directory="$USER_HOME$/Desktop/дз 2.7" vcs="Git" />
+    <mapping directory="$USER_HOME$/Desktop/дз 2.7/PythonProject" vcs="Git" />
+    <mapping directory="$USER_HOME$/Desktop/дз 2.7/python-autotests-basic" vcs="Git" />
   </component>
 </project>
