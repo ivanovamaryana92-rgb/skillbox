@@ -1,0 +1,5 @@
+mkdir -p src/tests
+touch src/tests/__init__.py
+touch src/tests/test_skillbox.py
+touch pytest.ini
+touch Makefile
