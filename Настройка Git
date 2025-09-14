@@ -1,0 +1,101 @@
+git config --global user.name "Mariana"
+git config --global user.email "vip.stonedesign@mail.ru"
+git init
+# Добавить все файлы
+git add .
+
+# Или добавить конкретные файлы
+git add main.py
+git add requirements.txt
+git add README.md
+# Коммит с сообщением
+git commit -m "Добавлен основной функционал"
+
+# Более подробное сообщение
+git commit -m "feat: добавил обработку данных
+- Реализована функция load_data()
+- Добавлена валидация входных параметров"
+git remote add origin https://github.com/username/your-repo.git
+# Первый push (установка upstream ветки)
+git push -u origin main
+
+# Последующие push'
+git push
+
+# Или явно указать ветку
+git push origin main
+# После внесения изменений в код
+git add .  # или конкретные файлы
+git commit -m "fix: исправил баг в расчетах"
+
+# Если нужно обновить зависимости
+pip freeze > requirements.txt
+git add requirements.txt
+git commit -m "chore: обновил зависимости"
+
+# Отправка изменений на GitHub/GitLab
+git push
+# Проверить статус репозитория
+git status
+
+# Посмотреть историю коммитов
+git log --oneline
+
+# Посмотреть изменения в файлах
+git diff
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+env/
+venv/
+ENV/
+env.bak/
+venv.bak/
+
+# Virtual environment
+pythonenv*
+
+# IDE
+.vs code/
+.idea/
+*.swp
+*.swo
+
+# Logs
+*.log
+
+# Database
+*.db
+*.sqlite3
+
+# Distribution / packaging
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+# Сделали изменения в коде
+git add .
+git commit -m "feat: добавил новую функцию анализа"
+git push
+
+# Если возник конфликт при push
+git pull origin main
+# Решите конфликты, затем
+git add .
+git commit -m "merge: разрешил конфликты"
+git push

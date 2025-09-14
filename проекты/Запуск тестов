@@ -1,0 +1,11 @@
+# Активировать корректное окружение
+conda activate test_env_correct
+
+# Показать тест кейсы
+make show_cases
+
+# Запустить тесты
+make run_tests
+
+# Или напрямую через pytest
+pytest --reruns 1 --reruns-delay 2 -v --tb=short --no-header

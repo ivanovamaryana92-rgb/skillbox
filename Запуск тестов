@@ -1,0 +1,4 @@
+conda activate test-env
+make show_cases
+make run_tests
+

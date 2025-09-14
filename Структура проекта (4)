@@ -1,0 +1,12 @@
+project/
+├── src/
+│   └── tests/
+│       ├── __init__.py
+│       ├── conftest.py
+│       ├── test_skillbox.py
+│       └── test_example.py
+├── Makefile
+├── pytest.ini
+├── environment-old.yml
+├── environment-test.yml
+└── requirements.txt

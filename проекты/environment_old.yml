@@ -1,0 +1,11 @@
+name: test_env_old
+channels:
+  - conda-forge
+  - defaults
+dependencies:
+  - python=3.9
+  - chromium=90.0
+  - pip
+  - pip:
+    - pytest
+    - selenium

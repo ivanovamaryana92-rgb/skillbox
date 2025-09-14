@@ -1,0 +1,24 @@
+makefile
+.PHONY: show_cases run_tests activate_env
+
+# Активация окружения
+activate_env:
+	conda activate test-env
+
+# Показать тест-кейсы
+show_cases:
+	pytest src/tests/ --collect-only -q
+
+# Запуск тестов
+run_tests:
+	pytest src/tests/ -v
+
+# Установка зависимостей
+install:
+	pip install -r requirements.txt
+
+# Очистка кэша pytest
+clean:
+	find . -name "*.pyc" -delete
+	find . -name "__pycache__" -delete
+	rm -rf .pytest_cache

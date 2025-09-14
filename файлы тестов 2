@@ -1,0 +1,11 @@
+def test_example_one():
+    """Тест-заглушка 1"""
+    pass
+
+def test_example_two():
+    """Тест-заглушка 2"""
+    pass
+
+def test_example_three():
+    """Тест-заглушка 3"""
+    pass

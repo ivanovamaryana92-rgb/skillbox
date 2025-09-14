@@ -1,0 +1,11 @@
+# Создание первого окружения с другой версией Chromium
+conda create -n test_env_old python=3.9 -y
+conda activate test_env_old
+pip install pytest selenium
+conda install -c conda-forge chromium=90.0 -y  # Пример старой версии
+
+# Создание второго окружения с корректной версией
+conda create -n test_env_correct python=3.9 -y
+conda activate test_env_correct
+pip install pytest selenium
+conda install -c conda-forge chromium -y  # Последняя стабильная версия

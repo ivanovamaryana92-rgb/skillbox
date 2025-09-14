@@ -1,0 +1,97 @@
+mkdir selenium-project1:
+cd selenium-project
+python m venv venv
+venv/Scripts/activate
+
+# Активируем (Linux/Mac)
+source venv/bin/activate
+# Инициализация Git
+git init
+
+# Создаем .gitignore файл
+echo venv/
+pycache
+.pyc
+.log
+chromedriver.exe
+geckodriver
+.DS_Store
+.env  .gitignore
+# Устанавливаем основные пакеты
+pip install selenium webdriver-manager
+
+# Сохраняем зависимости в requirements.txt
+pip freeze > requirements.txt
+# Создаем основную структуру
+mkdir src
+mkdir tests
+mkdir utils
+
+# Создаем основные файлы
+touch src/main.py
+touch src/config.py
+touch README.md
+selenium==4.15.0
+webdriver-manager==4.0.1
+# Selenium Project
+
+Проект для автоматизации тестирования с использованием Selenium WebDriver.
+
+## Установка
+
+1. Клонировать репозиторий:
+bash
+git clone <your-repo-url>
+cd selenium-project
+pip install r requirements.txt
+python src/main.py
+src/config.py**:
+python
+# Конфигурационные настройки
+BROWSER chrome
+BASE_URL https://www.google.com
+TIMEOUT 10
+from selenium import webdriver
+from selenium.webdriver.chrome.service import Service
+from webdriver_manager.chrome import ChromeDriverManager
+from selenium.webdriver.common.by import By
+import time
+
+def setup_driver()
+
+    driver webdriver.Chrome(service Service(ChromeDriverManager().install()))
+    driver.implicitly_wait(10)
+    return driver
+
+def test_google_search()
+
+    driver  setup_driver()
+
+    try:
+        driver.get(https://www.google.com
+        print driver.title
+
+        # Поиск поля ввода
+        search_box  driver.find_element(By.NAME, q)
+        search_box.send_keys(Selenium WebDriver)
+        search_box.submit()
+
+        time.sleep(2)
+        print(f"Новый заголовок: {driver.title}")
+
+    finally:
+        driver.quit()
+        print("Тест завершен")
+
+if __name__ == "__main__":
+    test_google_search()
+    # Добавляем все файлы в отслеживание
+git add .
+
+# Делаем первый коммит
+git commit m Initial commit: Selenium project setup
+
+# (Опционально) Добавляем удаленный репозиторий
+git remote add origin <your-repository-url>
+git branch M main
+git push u origin main

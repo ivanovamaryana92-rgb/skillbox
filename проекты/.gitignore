@@ -1,0 +1,26 @@
+# Python
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.env
+venv/
+env/
+.vscode/
+
+# PyCharm
+.idea/
+*.iml
+*.ipr
+*.iws
+
+# Данные и логи
+*.log
+*.sqlite3
+*.db
+data/
+uploads/
+
+# Временные файлы
+*.tmp
+*.temp
